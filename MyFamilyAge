@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int my_age = 19;
+
+    int mother_age = 45;
+
+    printf("My age is %i.\n, My mother age is %i.\n",
+           my_age, mother_age);
+
+    return 0;
+}
