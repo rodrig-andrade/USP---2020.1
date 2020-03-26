@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main () {
+
+   int number1;
+   int number2;
+   int multiplication;
+   
+   number1 = 3;
+   number2 = 4;
+   
+   multiplication = number1*number2;
+   
+   printf ("multiplication \n");
+   
+   return 0;
+}
