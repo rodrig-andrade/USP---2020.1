@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main (){
+    int num;
+    int doble;
+
+    num = 73;
+    doble = 2*num;
+
+    printf("Resultado: %i \n", doble);
+
+    return 0;
+}
