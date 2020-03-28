@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(){
+
+    int days;
+    int weeks;
+
+    //Entrar com o número de dias
+    printf("Informe o número de dias: ", days);
+    scanf("%i", &days);
+
+    //Calcular o número de semanas inteiras
+    weeks = days/7;
+
+    printf("Número de semanas inteiras: %i\n", weeks);
+
+    return 0;
+}
