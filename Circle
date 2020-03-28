@@ -1,0 +1,22 @@
+#include <stdio.h>
+#define PI 3.14
+
+int main(){
+
+    //Declare as variáveis
+    float radius;
+    float area;
+    float perimetro;
+
+    //Informe o valor do raio
+    printf("Informe o valor do raio: ", radius);
+    scanf("%f", &radius);
+
+    area = PI*radius*radius;
+    perimetro = 2*PI*radius;
+
+    printf("Área: %f \n", area);
+    printf("Perímetro: %f \n", perimetro);
+
+    return 0;
+}
