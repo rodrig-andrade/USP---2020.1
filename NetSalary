@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+
+    //Declare as variáveis
+    float daily;
+    float workedDays;
+    float tax;
+    float salary;
+
+    //Informe o valor da diária
+    printf("Informe a valor da diária: ", daily);
+    scanf("%f", &daily);
+
+    //Informe o número de dias trabalhados
+    printf("Informe o número de dias trabalhados: ", workedDays);
+    scanf("%f", &workedDays);
+
+    //Informe a porcentagem de imposto
+    printf("Informe a porcentagem de imposto: ", tax);
+    scanf("%f", &tax);
+
+    salary = daily * workedDays * (100 - tax) / 100;
+
+    printf("Salário: %f\n", salary);
+
+    return 0;
+}
