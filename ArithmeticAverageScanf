@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(){
+
+    int number1;
+    int number2;
+
+    int Average;
+
+    printf("Digite o valor de number1: ", number1);
+    scanf("%i", &number1);
+
+
+    printf("Digite o valor de number2: ", number2);
+    scanf("%i", &number2);
+
+    Average = (number1 + number2)/2;
+
+    printf("Average: %i\n", Average);
+
+    return 0;
+}
