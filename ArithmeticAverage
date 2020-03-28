@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main(){
+
+    int number1 = 3;
+    int number2 = 4;
+
+    int Avarage = (number1 + number2) / 2;
+
+    printf("Arithmetic Average: %i \n", Avarage);
+
+    return 0;
+}
