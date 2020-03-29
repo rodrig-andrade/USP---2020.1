@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main(){
+    float premioTotal;
+    float bilhete;
+    float premio1;
+    float premio2;
+    float premio3;
+    float bilhete1;
+    float bilhete2;
+    float bilhete3;
+
+    printf("Informe o Prêmio Total: ");
+    scanf("%f", &premioTotal);
+
+    printf("Informe o valor insvestido pelo jogador 1: ");
+    scanf("%f", &bilhete1);
+
+    printf("Informe o valor insvestido pelo jogador 2: ");
+    scanf("%f", &bilhete2);
+
+    printf("Informe o valor insvestido pelo jogador 3: ");
+    scanf("%f", &bilhete3);
+
+    bilhete = bilhete1 + bilhete2 + bilhete3;
+
+    premio1 = bilhete1 * (premioTotal/bilhete);
+    premio2 = bilhete2 * (premioTotal/bilhete);
+    premio3 = bilhete3 * (premioTotal/bilhete);
+
+    premioTotal = premio1 + premio2 + premio3;
+
+    printf("Valor do prêmio 1: %f \n", premio1);
+    printf("Valor do prêmio 2: %f \n", premio2);
+    printf("Valor do prêmio 3: %f \n", premio3);
+
+
+    return 0;
+}
