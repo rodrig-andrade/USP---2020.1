@@ -4,7 +4,7 @@ int main(){
 
     int loop = 1912;
 
-    for (loop; loop <= 1954; loop = loop + 1) {
+    for ( ; loop <= 1954; loop++) {
 
         printf("Thank You Alan Turing\n");
     }
