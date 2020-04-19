@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(){
+
+    setlocale(LC_ALL, "Portuguese");
+
+    int SomaM3 = ((3+999)*333)/2;
+    int SomaM5 = ((5+995)*299)/2;
+    int SomaM15 = ((15+990)*66)/2;
+
+    int Soma = SomaM3 + SomaM5 - SomaM15;
+
+    printf("O resultado é %i\n", Soma);
+
+    return 0;
+}
