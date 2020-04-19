@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(){
+
+    int number;
+    int resultado = 1;
+
+    printf("Informe o número: ");
+    scanf("%i", &number);
+
+    for ( ; number >= 1; --number) {
+
+        resultado *= number;
+    }
+
+    printf("O resultado e' %i", resultado);
+
+    return 0;
+}
