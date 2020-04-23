@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+
+int main(){
+
+    setlocale(LC_ALL, "Portuguese");
+
+    int a, b, c;
+    int lado1, lado2, lado3;
+
+    printf("Informe o 1° lado: \n");
+    scanf("%i", &a);
+    printf("Informe o 2° lado: \n");
+    scanf("%i", &b);
+    printf("Informe o 3° lado: \n");
+    scanf("%i", &c);
+
+    //Encontrar o maior lado
+
+    if (a > b && a > c) {
+        lado1 = a;
+        lado2 = b;
+        lado3 = c;
+    }
+    else
+        if (b > a && b > c) {
+            lado1 = b;
+            lado2 = a;
+            lado3 = c;
+        }
+    else
+        if(c > a && c > b){
+        lado1 = c;
+        lado2 = a;
+        lado3 = b;
+        }
+
+    //Condição de Existência do Triângulo
+
+    if (lado1 < lado2 + lado3){
+        printf("O Triângulo Existe!\n");
+
+        //Classificação do Triângulo
+
+        if (pow(lado1,2) < pow(lado2,2) + pow(lado3,2)){
+            printf("Triângulo Acutângulo\n");
+        }
+        else
+            if (pow(lado1,2) == pow(lado2,2) + pow(lado3,2)){
+                printf("Triângulo Retângulo\n");
+        }
+        else
+            if (pow(lado1,2) > pow(lado2,2) + pow(lado3,2)){
+                printf("Triângulo Obtuso\n");
+        }
+    }
+    else
+        printf("O Triângulo Não Existe!\n");
+
+    return 0;
+}
