@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+#include <locale.h>
+
+int main(){
+
+    setlocale(LC_ALL, "Portuguese");
+
+    int dividendo, divisor = 1, divisores = 0;
+
+    printf("Escolha o dividendo\n");
+    scanf("%i", &dividendo);
+
+    if (dividendo > 0){
+
+		for(divisor = dividendo - 1; divisor > 1; divisor--){
+
+		    if(dividendo%divisor == 0){
+		        divisores++;
+				break;
+			}
+		}
+		if(divisores)
+			printf("O número não é primo!\n");
+		else
+			printf("O número é primo!\n");
+	} else
+	      printf("Escolha um número positivo\n");
+
+	return 0;
+}
